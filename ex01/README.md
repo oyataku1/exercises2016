@@ -7,14 +7,14 @@
 * 中間締め切り：5月9日 (月)
 * 最終締め切り：5月21日 (土)
 
-与えられた1次元配列 `g` ("grid"), `v` ("values") (ともに同じ長さ `n` とする) に対して，
-`(g[1], v[1])`, ..., `(g[n], v[n])` を結ぶ折れ線グラフの関数を得たい．
-(`g` の要素は小さい順にソートされているとする．)
+与えられた1次元配列 `grid`, `vals` (ともに同じ長さ `n` とする) に対して，
+`(grid[1], vals[1])`, ..., `(grid[n], vals[n])` を結ぶ折れ線グラフの関数を得たい．
+(`grid` の要素は小さい順にソートされているとする．)
 
 たとえば，以下のように「関数を返す関数」を書いてみる．
 
 ```julia
-function my_lin_interp(g, v)
+function my_lin_interp(grid, vals)
     function func(x)
         ...
     end
@@ -29,9 +29,9 @@ end
 たとえば：
 
 ```julia
-g = [1, 2]
-v = [2, 0]
-f = my_lin_interp(g, v)
+grid = [1, 2]
+vals = [2, 0]
+f = my_lin_interp(grid, vals)
 
 f(1.25)
 # 1.5 が返ってくるはず
