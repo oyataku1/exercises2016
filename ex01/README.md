@@ -1,5 +1,5 @@
 # 課題1 (2016/5/2)
-線形補間 (linear interporation) の関数を返すコードを書いてみる．
+線形補間 (linear interpolation) の関数を返すコードを書いてみる．
 
 目標は[この節](http://quant-econ.net/jl/optgrowth.html#fitted-value-iteration)の図を描く[コード](https://github.com/QuantEcon/QuantEcon.applications/blob/master/optgrowth/linapprox.jl)の[この行](https://github.com/QuantEcon/QuantEcon.applications/blob/master/optgrowth/linapprox.jl#L7)を置き換えられるようなプログラムを書くこと．
 
@@ -46,3 +46,5 @@ f(1.25)
 あるいは
 [`searchsortedlast`](http://docs.julialang.org/en/release-0.4/stdlib/sort/#Base.searchsortedlast)
 を使う．
+
+(`grid` の範囲外の値が `x` として入力されたときの動作は自分で適宜決める．)
