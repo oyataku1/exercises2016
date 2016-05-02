@@ -91,7 +91,7 @@ end
 
 `MyLinInterp` タイプに対して `call` メソッドを定義することで，
 
-```
+```julia
 grid = [1, 2]
 vals = [2, 0]
 f = MyLinInterp(grid, vals)
