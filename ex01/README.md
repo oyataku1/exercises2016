@@ -151,3 +151,5 @@ end
 ```
 
 この場合も，`x` がスカラーのケースとベクトルのケースについて定義しておけば，それぞれ入力に対して動作を変えることができる．
+
+* [Call overloading and function-like objects](http://docs.julialang.org/en/release-0.4/manual/methods/#call-overloading-and-function-like-objects)
