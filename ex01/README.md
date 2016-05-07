@@ -77,6 +77,47 @@ julia> f([1.25, 1.5])
 
 のように `x` が Vector として与えられたら要素それぞれに対する `y` の値を Vector で返すようにしたい．
 
+たとえば次のように書いてみる (`func` の中身は適当)：
+
+```julia
+function my_lin_interp(grid, vals)
+    function func(x)
+        return x * 2
+    end
+    
+    function func(x::Vector)
+        return x + 10
+    end
+
+    return func
+end
+
+grid = [1, 2]
+vals = [2, 0]
+f = my_lin_interp(grid, vals)
+```
+
+引数 `x` が `Vector` のときは `func(x::Vector)` に書いてある命令が，それ以外のときは `func(x)` に書いてある命令が実行される：
+
+```julia
+julia> f(1)
+2
+
+julia> f([1, 2])
+2-element Array{Int64,1}:
+ 11
+ 12
+```
+
+このままだと，`x` がたとえば文字列でも `func(x)` が実行される．
+`Int64` や `Float64` だけ受けつけたいときは `Real` という
+[abstract type](http://quant-econ.net/jl/types_methods.html#abstract-types)
+の annotation をつけて，`func(x)` の代わりに `func(x::Real)` と書く．
+
+同様に，`func(x::Vector)` についても `Real` の subtype からなる `Vector` だけ受けつけたいときは，`func{T<:Real}(x::Vector{T})` と書く．
+
+* [Parametric Composite Types](http://docs.julialang.org/en/release-0.4/manual/types/#parametric-composite-types)
+
 ### Type として実装
 
 [Immutable Composite Type](http://docs.julialang.org/en/release-0.4/manual/types/#immutable-composite-types)
