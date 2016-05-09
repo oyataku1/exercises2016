@@ -118,6 +118,31 @@ julia> f([1, 2])
 
 * [Parametric Composite Types](http://docs.julialang.org/en/release-0.4/manual/types/#parametric-composite-types)
 
+スカラーのケースがちゃんと書けたら，ベクトルに対応するのは実は簡単で，
+
+```julia
+function my_lin_interp(grid, vals)
+    function func(x::Real)
+        ...
+    end
+    
+    function func{T<:Real}(x::Vector{T})
+        n = length(x)
+        out = Array(Float64, n)
+        for i in 1:n
+            out[i] = func(x[i])
+        end
+        return out
+    end
+
+    return func
+end
+```
+
+のように書けばよい．
+`func(x[i])` のところでは，`x[i]` がスカラー (`x[i]` のタイプが `Real` のサブタイプ) であることから
+`func(x::Real)` が呼ばれている．
+
 ### Type として実装
 
 [Immutable Composite Type](http://docs.julialang.org/en/release-0.4/manual/types/#immutable-composite-types)
