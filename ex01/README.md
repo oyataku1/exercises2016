@@ -54,12 +54,12 @@ f(1.25)
 
 次は
 
-* 引数 `x` が Vector のときへの対応 (universal function 化)
+* 引数 `x` が AbstractVector (1次元配列とそのたぐい) のときへの対応 (universal function 化)
 * type としての実装
 
 をやってみる．
 
-### Vector 入力への対応
+### AbstractVector 入力への対応
 
 [Types, Methods and Performance](http://quant-econ.net/jl/types_methods.html) の章の
 
@@ -75,7 +75,17 @@ julia> f([1.25, 1.5])
  1.0
 ```
 
-のように `x` が Vector として与えられたら要素それぞれに対する `y` の値を Vector で返すようにしたい．
+とか
+
+```julia
+julia> f(1:0.25:1.5)
+3-element Array{Float64,1}:
+ 2.0
+ 1.5
+ 1.0
+```
+
+のように `x` が Vector や Range として与えられたら要素それぞれに対する `y` の値を Vector で返すようにしたい．
 
 たとえば次のように書いてみる (`func` の中身は適当)：
 
@@ -85,7 +95,7 @@ function my_lin_interp(grid, vals)
         return x * 2
     end
     
-    function func(x::Vector)
+    function func(x::AbstractVector)
         return x + 10
     end
 
@@ -97,7 +107,7 @@ vals = [2, 0]
 f = my_lin_interp(grid, vals)
 ```
 
-引数 `x` が `Vector` のときは `func(x::Vector)` に書いてある命令が，それ以外のときは `func(x)` に書いてある命令が実行される：
+引数 `x` が `AbstractVector` のときは `func(x::AbstractVector)` に書いてある命令が，それ以外のときは `func(x)` に書いてある命令が実行される：
 
 ```julia
 julia> f(1)
@@ -114,7 +124,7 @@ julia> f([1, 2])
 [abstract type](http://quant-econ.net/jl/types_methods.html#abstract-types)
 の annotation をつけて，`func(x)` の代わりに `func(x::Real)` と書く．
 
-同様に，`func(x::Vector)` についても `Real` の subtype からなる `Vector` だけ受けつけたいときは，`func{T<:Real}(x::Vector{T})` と書く．
+同様に，`func(x::AbstractVector)` についても `Real` の subtype からなる `AbstractVector` だけ受けつけたいときは，`func{T<:Real}(x::AbstractVector{T})` と書く．
 
 * [Parametric Composite Types](http://docs.julialang.org/en/release-0.4/manual/types/#parametric-composite-types)
 
@@ -126,7 +136,7 @@ function my_lin_interp(grid, vals)
         ...
     end
     
-    function func{T<:Real}(x::Vector{T})
+    function func{T<:Real}(x::AbstractVector{T})
         n = length(x)
         out = Array(Float64, n)
         for i in 1:n
