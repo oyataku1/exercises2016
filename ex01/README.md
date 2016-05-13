@@ -94,7 +94,7 @@ function my_lin_interp(grid, vals)
     function func(x)
         return x * 2
     end
-    
+
     function func(x::AbstractVector)
         return x + 10
     end
@@ -135,7 +135,7 @@ function my_lin_interp(grid, vals)
     function func(x::Real)
         ...
     end
-    
+
     function func{T<:Real}(x::AbstractVector{T})
         n = length(x)
         out = Array(Float64, n)
@@ -204,18 +204,20 @@ end
 * タイトルと名前を書く ([ここ](http://quant-econ.net/jl/getting_started.html#other-content) も参照)
 * 必要であればパッケージを読み込む
 * `lin_interp.jl` の中身を表示する
-  
+
     ```jl
   ;cat lin_interp.jl
   ```
-  
+
 * `lin_interp.jl` を読み込む
-  
+
   ```jl
   include("lin_interp.jl")
   ```
-  
-* `lin_interp.jl` で定義した関数を使ってみる  
+
+* `lin_interp.jl` で定義した関数を使ってみる
   このページにある簡単な例を実行したり，[この節](http://quant-econ.net/jl/optgrowth.html#fitted-value-iteration)の図を書いてみたり，いろいろデモを行ってみる
 
 ようにしてください．
+
+* [実行例](http://nbviewer.jupyter.org/github/OyamaZemi/exercises2016/blob/master/ex01/lin_interp_demo.ipynb)
