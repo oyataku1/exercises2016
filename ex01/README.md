@@ -188,3 +188,34 @@ end
 この場合も，`x` がスカラーのケースとベクトルのケースについて定義しておけば，それぞれ入力に対して動作を変えることができる．
 
 * [Call overloading and function-like objects](http://docs.julialang.org/en/release-0.4/manual/methods/#call-overloading-and-function-like-objects)
+
+
+## ファイル構成
+
+最初は作業は Jupyter notebook で行えばよいですが，最終的には
+
+1. 関数を定義する `.jl` ファイル (たとえば `lin_interp.jl`)
+2. そのデモの notebook (たとえば `lin_interp_demo.ipynb`)
+
+を作ってください．
+
+`lin_interp_demo.ipynb` では
+
+* タイトルと名前を書く ([ここ](http://quant-econ.net/jl/getting_started.html#other-content) も参照)
+* 必要であればパッケージを読み込む
+* `lin_interp.jl` の中身を表示する
+  
+    ```jl
+  ;cat lin_interp.jl
+  ```
+  
+* `lin_interp.jl` を読み込む
+  
+  ```jl
+  include("lin_interp.jl")
+  ```
+  
+* `lin_interp.jl` で定義した関数を使ってみる  
+  このページにある簡単な例を実行したり，[この節](http://quant-econ.net/jl/optgrowth.html#fitted-value-iteration)の図を書いてみたり，いろいろデモを行ってみる
+
+ようにしてください．
