@@ -221,3 +221,8 @@ end
 ようにしてください．
 
 * [実行例](http://nbviewer.jupyter.org/github/OyamaZemi/exercises2016/blob/master/ex01/lin_interp_demo.ipynb)
+
+
+## ゼミ生の成果物
+
+* [Notebook リスト](notebooks.md)
