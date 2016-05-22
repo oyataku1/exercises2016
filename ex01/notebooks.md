@@ -4,3 +4,4 @@
 
 * [齊藤一織](http://nbviewer.jupyter.org/github/IoriS/My-/blob/master/lin_interp_demo.ipynb)
 * [岡部匡志](http://nbviewer.jupyter.org/github/M-okb/MyInterpolation.jl/blob/master/interp_demo.ipynb)
+* [中田竜明](http://nbviewer.jupyter.org/github/nswa17/MyInterpolations.jl/blob/master/interpolation.ipynb)
