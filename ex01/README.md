@@ -215,7 +215,7 @@ end
   include("lin_interp.jl")
   ```
 
-* `lin_interp.jl` で定義した関数を使ってみる
+* `lin_interp.jl` で定義した関数を使ってみる  
   このページにある簡単な例を実行したり，[この節](http://quant-econ.net/jl/optgrowth.html#fitted-value-iteration)の図を書いてみたり，いろいろデモを行ってみる
 
 ようにしてください．
