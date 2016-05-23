@@ -205,9 +205,24 @@ end
 * 必要であればパッケージを読み込む
 * `lin_interp.jl` の中身を表示する
 
-    ```jl
+  ```jl
   ;cat lin_interp.jl
   ```
+  
+  (追記)
+  エラーが出る，あるいは，エラーは出ないが中身が表示されない場合は
+  
+  ```jl
+  println(readall(`cat lin_interp.jl`))  # Mac OS X
+  ```
+  
+  あるいは
+  
+  ```jl
+  println(readall(`cmd /c type lin_int.jl`))  # Windows
+  ```
+  
+  にしてみてください．
 
 * `lin_interp.jl` を読み込む
 
