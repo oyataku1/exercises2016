@@ -10,3 +10,4 @@
 * [鈴木大志](http://nbviewer.jupyter.org/github/SUZUKITAISHI/interpolation/blob/master/lin_interp2.ipynb)
 * [池上慧](http://nbviewer.jupyter.org/github/keiikegami/Linear---Interpolation-/blob/master/lin_interp_demo_ikegami.ipynb)
 * [瀧川英輝](http://nbviewer.jupyter.org/github/EikiTakigawa/Mylnterpolation.jl/blob/master/lin_interp_demo.ipynb)
+* [金正賢](http://nbviewer.jupyter.org/github/ellenjunghyunkim/MyInterpolations.jl/blob/master/demo.ipynb)
