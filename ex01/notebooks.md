@@ -12,3 +12,4 @@
 * [瀧川英輝](http://nbviewer.jupyter.org/github/EikiTakigawa/Mylnterpolation.jl/blob/master/lin_interp_demo.ipynb)
 * [金正賢](http://nbviewer.jupyter.org/github/ellenjunghyunkim/MyInterpolations.jl/blob/master/demo.ipynb)
 * [加藤真大](http://nbviewer.jupyter.org/github/NlGG/Interpolation.jl/blob/master/linear_interpolation.ipynb)  
+* [津島亮太](http://nbviewer.jupyter.org/github/R-Tsushima/linear-interpolation.jl/blob/master/linear-interpolation.ipynb)
