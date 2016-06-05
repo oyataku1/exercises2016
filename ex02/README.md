@@ -1,0 +1,52 @@
+# 課題2 (2016/6/6)
+受入保留 (Deferred Acceptance) アルゴリズムを実装してみる．
+
+[Wikipedia の記事](http://ja.wikipedia.org/wiki/安定結婚問題)なり原論文
+
+* D. Gale and L.S. Shapley,
+  "[College Admissions and the Stability of Marriage](http://www.jstor.org/stable/2312726),"
+  American Mathematical Monthly 69 (1962), 9-15
+
+なりをよく読んでコードを書いてみる．
+
+* 最初は one-to-one (結婚のケース) でよいが，最終的には many-to-one (college admission のケース) を扱う．
+  (各 college には受入上限がある．)
+* 行く行くは「進学選択シミュレーション」のようなものをやりたい．
+* 提出方法：GitHub のリポジトリにファイルを「プッシュ」する．
+* 中間締め切り：6月13日 (月)
+* 最終締め切り：6月18日 (土)
+
+
+## 参考文献
+* A.E. Roth,
+  "[Deferred Acceptance Algorithms: History, Theory, Practice, and Open Questions](http://link.springer.com/article/10.1007/s00182-008-0117-6),"
+  International Journal of Game Theory 36 (2008), 537-569
+
+
+## データ構造
+
+これがベストかわかりませんが，次のようなデータ構造を採用することにしましょう．
+
+* 男性陣: `[1, ..., m]`
+* 女性陣: `[1, ..., n]`
+
+### 入力データ
+
+* `m_prefs`: `(n+1)` x `m` の2次元配列  
+  第 `i` 列 `m_prefs[:, i]` には男性 `i` が好きな女性の番号が順番に並べてある．
+  ただし，`0` は "unmatched" を意味する．
+
+* `f_prefs`: `(m+1)`x `n` の2次元配列  
+  第 `j` 列 `f_prefs[j]` には女性 `j` が好きな男性の番号が順番に並べてある．
+  ただし，`0` は "unmatched" を意味する．
+
+たとえば，`n=4` として，`m_prefs[1]` が `[2, 3, 0, 4, 1]` だとしたら，
+男性 `1` は「女性 `2` が一番好き，その次は女性 `3` が好き，その次は match しないのが好き
+(女性 `4, 1` とペアになるくらいなら一人でいる方が好き)」であることを意味する．
+
+### 出力データ
+
+* `m_matched`: 長さ `m` の1次元配列  
+  `m_matched[i]` は男性 `i` が match する女性の番号か `0` ("unmatched") が入る．
+* `f_matched`: 長さ `n` の1次元配列  
+  `f_matched[j]` は女性 `j` が match する男性の番号か `0` ("unmatched") が入る．
