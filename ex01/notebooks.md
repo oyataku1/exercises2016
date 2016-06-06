@@ -11,5 +11,6 @@
 * [池上慧](http://nbviewer.jupyter.org/github/keiikegami/Linear---Interpolation-/blob/master/lin_interp_demo_ikegami.ipynb)
 * [瀧川英輝](http://nbviewer.jupyter.org/github/EikiTakigawa/Mylnterpolation.jl/blob/master/lin_interp_demo.ipynb)
 * [金正賢](http://nbviewer.jupyter.org/github/ellenjunghyunkim/MyInterpolations.jl/blob/master/demo.ipynb)
-* [加藤真大](http://nbviewer.jupyter.org/github/NlGG/Interpolation.jl/blob/master/linear_interpolation.ipynb)  
+* [加藤真大](http://nbviewer.jupyter.org/github/NlGG/Interpolation.jl/blob/master/linear_interpolation.ipynb)
 * [津島亮太](http://nbviewer.jupyter.org/github/R-Tsushima/linear-interpolation.jl/blob/master/linear-interpolation.ipynb)
+* [三ツ国拓真](http://nbviewer.jupyter.org/github/oyataku1/InterPolations/blob/master/demo-interpolation.ipynb)
