@@ -14,3 +14,4 @@
 * [加藤真大](http://nbviewer.jupyter.org/github/NlGG/Interpolation.jl/blob/master/linear_interpolation.ipynb)
 * [津島亮太](http://nbviewer.jupyter.org/github/R-Tsushima/linear-interpolation.jl/blob/master/linear-interpolation.ipynb)
 * [三ツ国拓真](http://nbviewer.jupyter.org/github/oyataku1/InterPolations/blob/master/demo-interpolation.ipynb)
+* [高橋剛史](http://nbviewer.jupyter.org/github/13tsuyoshi/521due.jl/blob/master/lin_interp_demo.ipynb)
