@@ -50,3 +50,8 @@
   `m_matched[i]` は男性 `i` が match する女性の番号か `0` ("unmatched") が入る．
 * `f_matched`: 長さ `n` の1次元配列  
   `f_matched[j]` は女性 `j` が match する男性の番号か `0` ("unmatched") が入る．
+
+
+## ゼミ生の成果物
+
+* [Notebook リスト](notebooks.md)
