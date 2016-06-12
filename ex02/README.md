@@ -52,6 +52,22 @@
   `f_matched[j]` は女性 `j` が match する男性の番号か `0` ("unmatched") が入る．
 
 
+## ランダム選好リスト
+
+ランダムに選好リストを生成する関数を書いたので必要があれば使ってみてください．
+
+1. 使い方1  
+   [matching_tools.jl](https://raw.githubusercontent.com/oyamad/Matching.jl/0e6d6c1daab949ba2ef4e08369bfce99dd3ce9aa/src/matching_tools.jl)
+   を作業フォルダにダウンロードし，`include("matching_tools.jl")` とする．
+
+2. 使い方2  
+   パッケージ全体を `Pkg.clone("https://github.com/oyamad/Matching.jl")` でインストールし，`using Matching` とする．
+
+* [使用例](http://nbviewer.jupyter.org/github/oyamad/Matching.jl/blob/2811aed218e1695fffb833554a9d30f449794680/examples/random_prefs.ipynb)
+
+(仕様は今後変わる可能性があります．)
+
+
 ## ゼミ生の成果物
 
 * [Notebook リスト](notebooks.md)
