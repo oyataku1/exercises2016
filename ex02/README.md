@@ -68,6 +68,36 @@
 (仕様は今後変わる可能性があります．)
 
 
+## 単体テスト
+
+テストを作ったので，それが通るようにコードを書きましょう．
+
+[test_deferred_acceptance.jl](https://raw.githubusercontent.com/OyamaZemi/exercises2016/bdfbb7e1992e9667ab59e385b7a723f61ac1f639/ex02/test_deferred_acceptance.jl)
+を作業フォルダにダウンロードする．
+前提として
+
+* コードが書かれているファイルの名前は `deferred_acceptance.jl`
+* 関数の名前は `deferred_acceptance`
+
+になっているので，それと異なる命名をしている人は3, 4行目の
+
+```jl
+const file_name = "deferred_acceptance.jl"
+const function_name = "deferred_acceptance"
+```
+
+の `deferred_acceptance.jl` と `deferred_acceptance` を自分の命名に合わせて書きかえる．
+
+実行するには，Julia ウィンドウあるいは notebook で `include("test_deferred_acceptance.jl")` とする．実行結果が
+
+```
+Test Summary:                  | Pass  Total
+Testing deferred_acceptance.jl |    4      4
+```
+
+のようになれば，テストが通ったということ．
+
+
 ## ゼミ生の成果物
 
 * [Notebook リスト](notebooks.md)
