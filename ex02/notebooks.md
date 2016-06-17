@@ -9,3 +9,4 @@
 * [池上慧](http://nbviewer.jupyter.org/github/keiikegami/DA_Julia/blob/master/DA.ipynb)
 * [齊藤一織](http://nbviewer.jupyter.org/github/IoriS/Ex02/blob/master/deferred_acceptance.ipynb)
 * [高橋剛史](http://nbviewer.jupyter.org/github/13tsuyoshi/matching/blob/master/deferred_acceptance_demo.ipynb)
+* [森胤聡](http://nbviewer.jupyter.org/github/taneaki/matching.jl/blob/master/DA_Algorithm_Demo.ipynb)
