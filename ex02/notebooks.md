@@ -8,3 +8,4 @@
 * [瀧川英輝](http://nbviewer.jupyter.org/github/EikiTakigawa/Deferred-Acceptance/blob/master/DA%281to1%29demo.ipynb)
 * [池上慧](http://nbviewer.jupyter.org/github/keiikegami/DA_Julia/blob/master/DA.ipynb)
 * [齊藤一織](http://nbviewer.jupyter.org/github/IoriS/Ex02/blob/master/deferred_acceptance.ipynb)
+* [高橋剛史](http://nbviewer.jupyter.org/github/13tsuyoshi/matching/blob/master/deferred_acceptance_demo.ipynb)
