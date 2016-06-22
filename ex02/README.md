@@ -105,4 +105,7 @@ Testing deferred_acceptance.jl |    4      4
 
 ## パフォーマンス比較の結果 (2016/6/20)
 
-* [結果](http://nbviewer.ipython.org/github/OyamaZemi/exercises2016/blob/master/ex02/competition_one_to_one.ipynb)
+* [結果](http://nbviewer.jupyter.org/github/OyamaZemi/exercises2016/blob/b99a637219c6975169f419e9cfd9e96dd1425486/ex02/competition_one_to_one.ipynb)
+  (@IoriS のバグが直ったあとに再度実行した結果)
+* [結果](http://nbviewer.jupyter.org/github/OyamaZemi/exercises2016/blob/4b9fcc6dae374d4884a9b09f96cf0ed3bfb98acb/ex02/competition_one_to_one.ipynb)
+  (`performance` 関数で `seed` をちゃんと設定できるように修正したあとに再度実行した結果)
