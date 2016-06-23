@@ -43,3 +43,30 @@ end
 
 ここで，複数スロットを持つ方 (つまり大学) が respondants であることを想定しています．
 (このケースで書けたら，逆のケースも書いてみる．あるいは最初から多対多で書いておいてもよい．)
+
+
+## 単体テスト
+
+Many-to-one 用にもテストを作ったので，それが通るようにコードを書きましょう．
+
+[test_deferred_acceptance.jl](https://raw.githubusercontent.com/OyamaZemi/exercises2016/98467d6ad95b5bf392b9f6996b0ee57e044b7e4c/ex03/test_deferred_acceptance.jl)
+を作業フォルダにダウンロードする．
+課題2と同じフォルダで作業しているのなら，前回のテストファイルに上書きする．
+
+前回と同様
+
+```jl
+const file_name = "deferred_acceptance.jl"
+const function_name = "deferred_acceptance"
+```
+
+を自分の命名に合わせて書きかえる．
+
+Julia ウィンドウあるいは notebook で `include("test_deferred_acceptance.jl");` として，
+
+```
+Test Summary:                  | Pass  Total
+Testing deferred_acceptance.jl |   10     10
+```
+
+のようになれば，テストが通ったということ．
