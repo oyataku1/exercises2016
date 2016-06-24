@@ -28,14 +28,14 @@ function deferred_acceptance(prop_prefs::Matrix{Int},
                              caps::Vector{Int})
 
     # 多対一のコードを書く
-    
+
     return prop_matches, resp_matches, indptr
 end
 
 # 一対一のケース
 function deferred_acceptance(prop_prefs::Matrix{Int}, resp_prefs::Matrix{Int})
     caps = ones(Int, size(resp_prefs, 2))
-    prop_matches, resp_matches, indptr = 
+    prop_matches, resp_matches, indptr =
         deferred_acceptance(prop_prefs, resp_prefs, caps)
     return prop_matches, resp_matches
 end
@@ -70,3 +70,9 @@ Testing deferred_acceptance.jl |   10     10
 ```
 
 のようになれば，テストが通ったということ．
+
+
+## ゼミ生の成果物
+
+* [Notebook リスト](notebooks.md)
+
