@@ -72,7 +72,21 @@ Testing deferred_acceptance.jl |   10     10
 のようになれば，テストが通ったということ．
 
 
+## ランダム選好リスト
+
+`caps` も返すように拡張しました．
+
+1. 使い方1  
+   [新しい `matching_tools.jl`](https://raw.githubusercontent.com/oyamad/Matching.jl/c5f86f101eeb75f5c93d80b0726be2253a7fc765/src/matching_tools.jl)
+   を作業フォルダにダウンロードし，`include("matching_tools.jl")` とする．
+
+2. 使い方2  
+   パッケージ全体を `Pkg.clone("https://github.com/oyamad/Matching.jl")` でインストールし，`using Matching` とする．
+   前回 `Pkg.clone` している人は「すでにある」と言われるだろうから，その場合は `Pkg.update()` でアップデートする．
+
+* [使用例](http://nbviewer.jupyter.org/github/oyamad/Matching.jl/blob/0df7172f47a62a63c48cee28d70c9f7d1b38de46/examples/random_prefs.ipynb)
+
+
 ## ゼミ生の成果物
 
 * [Notebook リスト](notebooks.md)
-
