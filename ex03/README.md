@@ -49,7 +49,7 @@ end
 
 Many-to-one 用にもテストを作ったので，それが通るようにコードを書きましょう．
 
-[test_deferred_acceptance.jl](https://raw.githubusercontent.com/OyamaZemi/exercises2016/98467d6ad95b5bf392b9f6996b0ee57e044b7e4c/ex03/test_deferred_acceptance.jl)
+[test_deferred_acceptance.jl](https://raw.githubusercontent.com/OyamaZemi/exercises2016/d8a41a8929d67110109cb08d0557de86767fcd05/ex03/test_deferred_acceptance.jl)
 を作業フォルダにダウンロードする．
 課題2と同じフォルダで作業しているのなら，前回のテストファイルに上書きする．
 
