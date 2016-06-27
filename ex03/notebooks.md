@@ -6,3 +6,4 @@
 * [中田竜明](http://nbviewer.jupyter.org/github/nswa17/DA_alg.jl/blob/master/DA2.ipynb?flush_cache=true)
 * [齊藤一織](http://nbviewer.jupyter.org/github/IoriS/Ex03/blob/master/deferred_acceptance.ipynb)
 * [岡部匡志](http://nbviewer.jupyter.org/github/M-okb/DA-Matching/blob/master/Many_to_one.ipynb?flush_cache=true)
+* [高橋剛史](http://nbviewer.jupyter.org/github/13tsuyoshi/matching/blob/master/Many_to_one_demo.ipynb)
