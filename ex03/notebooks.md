@@ -8,3 +8,4 @@
 * [岡部匡志](http://nbviewer.jupyter.org/github/M-okb/DA-Matching/blob/master/Many_to_one.ipynb?flush_cache=true)
 * [高橋剛史](http://nbviewer.jupyter.org/github/13tsuyoshi/matching/blob/master/Many_to_one_demo.ipynb)
 * [瀧川英輝](http://nbviewer.jupyter.org/github/EikiTakigawa/Deferred-Acceptance/blob/master/DA%28Many_to_1%29demo.ipynb)
+* [松下旦](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex03/ex03_demo.ipynb)
