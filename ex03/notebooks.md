@@ -8,6 +8,8 @@
 * [岡部匡志](http://nbviewer.jupyter.org/github/M-okb/DA-Matching/blob/master/Many_to_one.ipynb?flush_cache=true)
 * [高橋剛史](http://nbviewer.jupyter.org/github/13tsuyoshi/matching/blob/master/Many_to_one_demo.ipynb)
 * [瀧川英輝](http://nbviewer.jupyter.org/github/EikiTakigawa/Deferred-Acceptance/blob/master/DA%28Many_to_1%29demo.ipynb)
+<<<<<<< HEAD
 * [加藤真大](http://nbviewer.jupyter.org/github/NlGG/Economics/blob/master/matching.ipynb)
 * [三ツ國拓真](http://nbviewer.jupyter.org/github/oyataku1/Matching/blob/master/test%28many-to-one%29.ipynb)
 * [鈴木大志](http://nbviewer.jupyter.org/github/SUZUKITAISHI/matching/blob/master/Deffered%20Acceptance%28%E6%8F%90%E5%87%BA%E7%94%A8%29.ipynb)
+* [松下旦](http://nbviewer.jupyter.org/github/myuuuuun/oyama_seminar2016/blob/master/exercise/ex03/ex03_demo.ipynb)
