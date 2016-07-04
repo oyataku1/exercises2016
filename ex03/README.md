@@ -90,3 +90,8 @@ Testing deferred_acceptance.jl |   10     10
 ## ゼミ生の成果物
 
 * [Notebook リスト](notebooks.md)
+
+
+## パフォーマンス比較の結果 (2016/7/4)
+
+* [結果](http://nbviewer.jupyter.org/github/OyamaZemi/exercises2016/blob/84cc1244ae41cd8f3fdc7a58e0a1f4a349e5a513/ex03/competition_many_to_one.ipynb)
