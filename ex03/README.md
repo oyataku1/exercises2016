@@ -95,3 +95,9 @@ Testing deferred_acceptance.jl |   10     10
 ## パフォーマンス比較の結果 (2016/7/4)
 
 * [結果](http://nbviewer.jupyter.org/github/OyamaZemi/exercises2016/blob/84cc1244ae41cd8f3fdc7a58e0a1f4a349e5a513/ex03/competition_many_to_one.ipynb)
+
+
+## 既存研究のシミュレーションの再現
+
+0. I. Ashlagi, Y. Kanoria, and J. D. Leshno (2015).
+   "[Unbalanced Random Matching Markets: The Stark Effect of Competition](http://web.stanford.edu/~iashlagi/papers/UnbalancedMatchingAKL.pdf)."
