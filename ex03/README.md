@@ -101,3 +101,12 @@ Testing deferred_acceptance.jl |   10     10
 
 0. I. Ashlagi, Y. Kanoria, and J. D. Leshno (2015).
    "[Unbalanced Random Matching Markets: The Stark Effect of Competition](http://web.stanford.edu/~iashlagi/papers/UnbalancedMatchingAKL.pdf)."
+
+
+## その他の拡張
+
+* 以下の論文の Section 4 "Common quotas: nested set systems" のアルゴリズムを実装してみる：
+  
+  * P. Biró, T. Fleiner, R. W. Irving, and D. F. Manlove (2010).
+    "[The College Admissions problem with lower and common quotas](http://www.sciencedirect.com/science/article/pii/S0304397510002860),"
+    Theoretical Computer Science 411, 3136-3153.
