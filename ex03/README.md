@@ -105,8 +105,15 @@ Testing deferred_acceptance.jl |   10     10
 
 ## その他の拡張
 
-* 以下の論文の Section 4 "Common quotas: nested set systems" のアルゴリズムを実装してみる：
-  
-  * P. Biró, T. Fleiner, R. W. Irving, and D. F. Manlove (2010).
-    "[The College Admissions problem with lower and common quotas](http://www.sciencedirect.com/science/article/pii/S0304397510002860),"
-    Theoretical Computer Science 411, 3136-3153.
+以下の論文のアルゴリズムを実装してみる．
+
+* D. J. Abraham, R. W. Irving, and D. F. Manlove (2007).
+  "[Two algorithms for the Student-Project Allocation problem](http://www.sciencedirect.com/science/article/pii/S1570866706000207),"
+  Journal of Discrete Algorithms 5, 73-90.
+
+* P. Biró, T. Fleiner, R. W. Irving, and D. F. Manlove (2010).
+  "[The College Admissions problem with lower and common quotas](http://www.sciencedirect.com/science/article/pii/S0304397510002860),"
+  Theoretical Computer Science 411, 3136-3153.
+
+  Section 4 "Common quotas: nested set systems" のアルゴリズム．
+  上の論文の一般化になっている．
