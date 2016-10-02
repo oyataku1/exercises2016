@@ -61,6 +61,7 @@ A Simple Optimal Growth Model の
   ``WARNING: the no-op `transpose` fallback is deprecated ...``
   という warning が出ると思います (Array `colors` の transpose `'` はもうサポートされないとのこと)．
   これを消したい人は次のようにやるとよいです．
+  (参考 [QuantEcon.applications Issue #69](https://github.com/QuantEcon/QuantEcon.applications/issues/69))
 
   * `for` ループとその上の `ws`，`colors` を
     
