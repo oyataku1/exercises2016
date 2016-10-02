@@ -49,6 +49,37 @@ A Simple Optimal Growth Model の
   * `beta` は `gm.bet`．
   * `alpha` は別個に定義しないといけない．
 
+* ついでに Exercises もやってみましょう．
+
+* Julia v0.5 を使っていて `main` 関数をそのまま使った人は
+
+  ```jl
+  plot!(gm.grid, ws, color=colors', label="", linewidth=2)
+  ```
+  
+  の行で
+  ``WARNING: the no-op `transpose` fallback is deprecated ...``
+  という warning が出ると思います (Array `colors` の transpose `'` はもうサポートされないとのこと)．
+  これを消したい人は次のようにやるとよいです．
+
+  * `for` ループとその上の `ws`，`colors` を
+    
+    ```jl
+    ws = Array(Array, n)
+    colors = Array(RGBA, 1, n)
+    for i=1:n
+        w = bellman_operator(gm, w)
+        ws[i] = w
+        colors[i] = RGBA(0, 0, 0, i/n)
+    end
+    ```
+    
+    に変える．
+    (`ws` と `colors` のサイズは `n` とわかっているのだから空の配列に push していくことはない．
+    `colors` の方は2次元配列にする．)
+    
+  * `colors'` の `'` を消す．
+
 
 ## ゼミ生の成果物
 
